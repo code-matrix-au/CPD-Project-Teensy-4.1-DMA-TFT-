@@ -39,8 +39,9 @@ static const uint8_t HX8357D_regValues[] PROGMEM = {
     1,
     0x25, // -1.52V
     HX8357_SETOSC,
-    1,
+    2,
     0x68, // Normal mode 70Hz, Idle mode 55 Hz
+    0x01, // enable osc 
     HX8357_SETPANEL,
     1,
     0x05, // BGR, Gate direction swapped
